@@ -12,6 +12,9 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 </p> 
 <h2>Lecture Source Code:</h2>
 <ol>
+<li>Introduction</li>
+
 <li><a href='https://goo.gl/E7koEm'> Getting Started</a></li>
 
+<li><a href='https://goo.gl/E8dhMM'> Collapsing Toolbar Setup</a></li>
 </ol>
