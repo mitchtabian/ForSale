@@ -7,7 +7,7 @@
     <string name="fragment_account">Account</string>
 
     <!-- Dialog Names -->
-
+    <string name="dialog_select_photo">SelectPhoto</string>
 
     <!-- Database nodes -->
     <string name="node_users">users</string>

@@ -1,6 +1,8 @@
 package codingwithmitch.com.forsale;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -20,9 +22,27 @@ import codingwithmitch.com.forsale.util.UniversalImageLoader;
  * Created by User on 10/22/2017.
  */
 
-public class PostFragment extends Fragment {
+public class PostFragment extends Fragment implements SelectPhotoDialog.OnPhotoSelectedListener {
 
     private static final String TAG = "PostFragment";
+
+    @Override
+    public void getImagePath(Uri imagePath) {
+        Log.d(TAG, "getImagePath: setting the image to imageview");
+        UniversalImageLoader.setImage(imagePath.toString(), mPostImage);
+        //assign to global variable
+        mSelectedBitmap = null;
+        mSelectedUri = imagePath;
+    }
+
+    @Override
+    public void getImageBitmap(Bitmap bitmap) {
+        Log.d(TAG, "getImageBitmap: setting the image to imageview");
+        mPostImage.setImageBitmap(bitmap);
+        //assign to a global variable
+        mSelectedUri = null;
+        mSelectedBitmap = bitmap;
+    }
 
     //widgets
     private ImageView mPostImage;
@@ -31,6 +51,8 @@ public class PostFragment extends Fragment {
     private ProgressBar mProgressBar;
 
     //vars
+    private Bitmap mSelectedBitmap;
+    private Uri mSelectedUri;
 
 
     @Nullable
@@ -51,7 +73,7 @@ public class PostFragment extends Fragment {
         getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         init();
-        
+
         return view;
     }
 
@@ -61,7 +83,9 @@ public class PostFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: opening dialog to choose new photo");
-
+                SelectPhotoDialog dialog = new SelectPhotoDialog();
+                dialog.show(getFragmentManager(), getString(R.string.dialog_select_photo));
+                dialog.setTargetFragment(PostFragment.this, 1);
             }
         });
     }
@@ -96,6 +120,8 @@ public class PostFragment extends Fragment {
     private boolean isEmpty(String string){
         return string.equals("");
     }
+
+
 }
 
 
