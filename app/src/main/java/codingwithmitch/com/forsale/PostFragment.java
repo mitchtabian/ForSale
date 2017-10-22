@@ -50,6 +50,8 @@ public class PostFragment extends Fragment {
 
         getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
+        init();
+        
         return view;
     }
 
