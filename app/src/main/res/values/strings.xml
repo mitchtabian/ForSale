@@ -1,7 +1,10 @@
 <resources>
 
     <!-- Fragment Names -->
-
+    <string name="fragment_search">Search</string>
+    <string name="fragment_watch_list">Watch List</string>
+    <string name="fragment_post">Post</string>
+    <string name="fragment_account">Account</string>
 
     <!-- Dialog Names -->
 
