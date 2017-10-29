@@ -11,6 +11,7 @@
 
     <!-- Database nodes -->
     <string name="node_users">users</string>
+    <string name="node_posts">posts</string>
 
 
     <!-- Database field names -->

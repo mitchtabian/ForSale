@@ -33,6 +33,7 @@ import com.google.firebase.storage.UploadTask;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
+import codingwithmitch.com.forsale.models.Post;
 import codingwithmitch.com.forsale.util.UniversalImageLoader;
 
 /**
@@ -136,11 +137,16 @@ public class PostFragment extends Fragment implements SelectPhotoDialog.OnPhotoS
     }
 
     private void uploadNewPhoto(Bitmap bitmap){
-
+        Log.d(TAG, "uploadNewPhoto: uploading a new image bitmap to storage");
+        BackgroundImageResize resize = new BackgroundImageResize(bitmap);
+        Uri uri = null;
+        resize.execute(uri);
     }
 
     private void uploadNewPhoto(Uri imagePath){
-
+        Log.d(TAG, "uploadNewPhoto: uploading a new image uri to storage.");
+        BackgroundImageResize resize = new BackgroundImageResize(null);
+        resize.execute(imagePath);
     }
 
     public class BackgroundImageResize extends AsyncTask<Uri, Integer, byte[]>{
@@ -184,7 +190,7 @@ public class PostFragment extends Fragment implements SelectPhotoDialog.OnPhotoS
             mUploadBytes = bytes;
             hideProgressBar();
             //execute the upload task
-
+            executeUploadTask();
         }
     }
 
@@ -208,7 +214,24 @@ public class PostFragment extends Fragment implements SelectPhotoDialog.OnPhotoS
 
                 Log.d(TAG, "onSuccess: firebase download url: " + firebaseUri.toString());
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-                
+
+                Post post = new Post();
+                post.setImage(firebaseUri.toString());
+                post.setCity(mCity.getText().toString());
+                post.setContact_email(mContactEmail.getText().toString());
+                post.setCountry(mContactEmail.getText().toString());
+                post.setDescription(mDescription.getText().toString());
+                post.setPost_id(postId);
+                post.setPrice(mPrice.getText().toString());
+                post.setState_province(mStateProvince.getText().toString());
+                post.setTitle(mTitle.getText().toString());
+                post.setUser_id(FirebaseAuth.getInstance().getCurrentUser().getUid());
+
+                reference.child(getString(R.string.node_posts))
+                        .child(postId)
+                        .setValue(post);
+
+                resetFields();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
