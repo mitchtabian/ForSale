@@ -3,7 +3,9 @@ package codingwithmitch.com.forsale;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -15,6 +17,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 import codingwithmitch.com.forsale.util.UniversalImageLoader;
 
@@ -53,6 +59,7 @@ public class PostFragment extends Fragment implements SelectPhotoDialog.OnPhotoS
     //vars
     private Bitmap mSelectedBitmap;
     private Uri mSelectedUri;
+    private byte[] mUploadBytes;
 
 
     @Nullable
@@ -88,7 +95,91 @@ public class PostFragment extends Fragment implements SelectPhotoDialog.OnPhotoS
                 dialog.setTargetFragment(PostFragment.this, 1);
             }
         });
+
+        mPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: attempting to post...");
+                if(!isEmpty(mTitle.getText().toString())
+                        && !isEmpty(mDescription.getText().toString())
+                        && !isEmpty(mPrice.getText().toString())
+                        && !isEmpty(mCountry.getText().toString())
+                        && !isEmpty(mStateProvince.getText().toString())
+                        && !isEmpty(mCity.getText().toString())
+                        && !isEmpty(mContactEmail.getText().toString())){
+
+                    //we have a bitmap and no Uri
+                    if(mSelectedBitmap != null && mSelectedUri == null){
+                        uploadNewPhoto(mSelectedBitmap);
+                    }
+                    //we have no bitmap and a uri
+                    else if(mSelectedBitmap == null && mSelectedUri != null){
+                        uploadNewPhoto(mSelectedUri);
+                    }
+                }else{
+                    Toast.makeText(getActivity(), "You must fill out all the fields", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
+
+    private void uploadNewPhoto(Bitmap bitmap){
+
+    }
+
+    private void uploadNewPhoto(Uri imagePath){
+
+    }
+
+    public class BackgroundImageResize extends AsyncTask<Uri, Integer, byte[]>{
+
+        Bitmap mBitmap;
+
+        public BackgroundImageResize(Bitmap bitmap) {
+            if(bitmap != null){
+                this.mBitmap = bitmap;
+            }
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            Toast.makeText(getActivity(), "compressing image", Toast.LENGTH_SHORT).show();
+            showProgressBar();
+        }
+
+        @Override
+        protected byte[] doInBackground(Uri... params) {
+            Log.d(TAG, "doInBackground: started.");
+
+            if(mBitmap == null){
+                try{
+                    mBitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), params[0]);
+                }catch (IOException e){
+                    Log.e(TAG, "doInBackground: IOException: " + e.getMessage());
+                }
+            }
+            byte[] bytes = null;
+            bytes = getBytesFromBitmap(mBitmap, 100);
+            return bytes;
+        }
+
+        @Override
+        protected void onPostExecute(byte[] bytes) {
+            super.onPostExecute(bytes);
+            mUploadBytes = bytes;
+            hideProgressBar();
+            //execute the upload task
+
+        }
+    }
+
+    public static byte[] getBytesFromBitmap(Bitmap bitmap, int quality){
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, quality,stream);
+        return stream.toByteArray();
+    }
+
 
     private void resetFields(){
         UniversalImageLoader.setImage("", mPostImage);
