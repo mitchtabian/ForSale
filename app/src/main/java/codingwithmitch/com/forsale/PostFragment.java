@@ -34,6 +34,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 import codingwithmitch.com.forsale.models.Post;
+import codingwithmitch.com.forsale.util.RotateBitmap;
 import codingwithmitch.com.forsale.util.UniversalImageLoader;
 
 /**
@@ -172,7 +173,8 @@ public class PostFragment extends Fragment implements SelectPhotoDialog.OnPhotoS
 
             if(mBitmap == null){
                 try{
-                    mBitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), params[0]);
+                    RotateBitmap rotateBitmap = new RotateBitmap();
+                    mBitmap = rotateBitmap.HandleSamplingAndRotationBitmap(getActivity(), params[0]);
                 }catch (IOException e){
                     Log.e(TAG, "doInBackground: IOException: " + e.getMessage());
                 }
