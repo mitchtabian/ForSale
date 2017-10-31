@@ -35,4 +35,8 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 <li><a href='https://goo.gl/ZFWvwK'> Posting Items for Sale</a></li>
 
 <li><a href='https://goo.gl/jLzPsS'> Rotating Images on Android</a></li>
+
+<li><a href='https://goo.gl/M4EJ2m'> Saving Search Preferences</a></li>
+
+<li> Deploying ElasticSearch</li>
 </ol>
