@@ -1,30 +1,45 @@
-<h2>Enabling Firebase Cloud Functions</h2>
+<h2>Creating an ElasticSearch Firebase Cloud Function</h2>
+<h5>This function will trigger when a post is created or deleted and update the data on your ElasticSearch server.</h5>
 <ol>
-<li>Install Node.js onto your computer. Get it here: https://nodejs.org/en/</li>
 
-<li>Open a command prompt in the Android project directory</li>
+<li>Open the file named "index.js" in the "functions" folder in your Android project's directory. Paste this into index.js:</li>
 
-<li>Install the Firebase CLI tool:
-<pre><code>npm install -g firebase-tools</code></pre>
+<pre><code>
+const functions = require('firebase-functions');
+
+const request = require('request-promise')
+
+exports.indexPostsToElastic = functions.database.ref('/posts/{post_id}')
+	.onWrite(event => {
+		let postData = event.data.val();
+		let post_id = event.params.post_id;
+		
+		console.log('Indexing post:', postData);
+		
+		let elasticSearchConfig = functions.config().elasticsearch;
+		let elasticSearchUrl = elasticSearchConfig.url + 'posts/post/' + post_id;
+		let elasticSearchMethod = postData ? 'POST' : 'DELETE';
+		
+		let elasticSearchRequest = {
+			method: elasticSearchMethod,
+			url: elasticSearchUrl,
+			auth:{
+				username: elasticSearchConfig.username,
+				password: elasticSearchConfig.password,
+			},
+			body: postData,
+			json: true
+		  };
+		  
+		  return request(elasticSearchRequest).then(response => {
+			 console.log("ElasticSearch response", response);
+		  });
+	});
+
+</code></pre>
+
+<li>save the file and deploy it to firebase:
+<pre><code>firebase deploy --only functions</code></pre>
 </li>
-
-<li>Log into Firebase:
-<pre><code>firebase login</code></pre>
-</li>
-
-<li>Initialize your Android project to enable the use of Firebase Cloud Functions:
-<pre><code>firebase init functions</code></pre>
-You'll be asked to select your project. Obviously select the project you're working with.
-</li>
-
-<li>Install two node.js packages that will make it easier to send requests to your ElasticSearch server:
-<pre><code>npm install --save request request-promise</code></pre>
-</li>
-
-<li>Setup the config file for this firebase project so it can communicate with the ElasticSearch server:
-<pre><code>firebase functions:config:set elasticsearch.username="user" elasticsearch.password="your password" elasticsearch.url="your elasticsearch url"</code></pre>
-</li>
-
-
 </ol>
 
