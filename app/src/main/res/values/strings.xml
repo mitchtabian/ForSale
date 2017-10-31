@@ -19,6 +19,10 @@
 
 
     <!-- Shared Preferenes -->
+    <string name="preferences_country">preferences_country</string>
+    <string name="preferences_state_province">preferences_state_province</string>
+    <string name="preferences_city">preferences_city</string>
+
 
     <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,

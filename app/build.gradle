@@ -31,6 +31,9 @@ dependencies {
     //Design Support library dependency
     compile 'com.android.support:design:26.+'
 
+    //recyclerview
+    compile 'com.android.support:recyclerview-v7:26.+'
+
     //ExifInterface support
     compile "com.android.support:exifinterface:26.+"
 
