@@ -1,68 +1,30 @@
-<h2>Creating an ElasticSearch index with Postman</h2>
+<h2>Enabling Firebase Cloud Functions</h2>
 <ol>
-<li>Download and install postman if you don't have it: <a href='https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?utm_source=chrome-ntp-icon'>get it here </a></li>
+<li>Install Node.js onto your computer. Get it here: https://nodejs.org/en/</li>
 
-<li>Add the url end point for you're ElasticSearch server. This is mine: http://35.188.218.81//elasticsearch/posts but yours will be different.
+<li>Open a command prompt in the Android project directory</li>
 
-<p><b>DO NOT COPY MINE! IT WON'T WORK</b></p></li>
-
-<li>
-Add the body to the <b>PUT</b> request:
-<pre><code>{
-	"mappings":{
-	"post":{
-		"properties":{
-				"city":{
-					"type": "text"
-				},
-				"contact_email":{
-					"type": "text"
-				},
-				"country":{
-					"type": "text"
-				},
-				"description":{
-				"type": "text"
-				},
-				"image":{
-				"type": "text"
-				},
-				"post_id":{
-					"type": "text"
-				},
-				"state_province":{
-					"type": "text"
-				},
-				"title":{
-					"type": "text"
-				},
-				"user_id":{
-					"type": "text"
-				}
-			}
-		}
-	}
-}</code></pre>
+<li>Install the Firebase CLI tool:
+<pre><code>npm install -g firebase-tools</code></pre>
 </li>
 
-<li>Add the headers to the PUT request:
-<pre><code>
-key: Content-Type, value: application/json
-key: Authorization, value: Basic dXNlcjpUQlhxVkRYNkRaaVQ=
-</code></pre>
-<b>Remember</b> to get your authorization token you just take convert "user:" and your password to base64. So for me my password was "TBXqVDX6DZiT" and username was "user" so user:TBXqVDX6DZiT = dXNlcjpUQlhxVkRYNkRaaVQ=. 
-I used the unicode converter here: https://www.base64decode.org/.
+<li>Log into Firebase:
+<pre><code>firebase login</code></pre>
 </li>
 
-<li>Press "Send" on Postman. If the request is successful you'll get a result that looks like this: 
-<pre><code>
-{
-    "acknowledged": true,
-    "shards_acknowledged": true,
-    "index": "test"
-}
-</code></pre>
+<li>Initialize your Android project to enable the use of Firebase Cloud Functions:
+<pre><code>firebase init functions</code></pre>
+You'll be asked to select your project. Obviously select the project you're working with.
 </li>
+
+<li>Install two node.js packages that will make it easier to send requests to your ElasticSearch server:
+<pre><code>npm install --save request request-promise</code></pre>
+</li>
+
+<li>Setup the config file for this firebase project so it can communicate with the ElasticSearch server:
+<pre><code>firebase functions:config:set elasticsearch.username="user" elasticsearch.password="your password" elasticsearch.url="your elasticsearch url"</code></pre>
+</li>
+
 
 </ol>
 
