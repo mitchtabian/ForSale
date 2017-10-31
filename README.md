@@ -39,4 +39,6 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 <li><a href='https://goo.gl/M4EJ2m'> Saving Search Preferences</a></li>
 
 <li> Deploying ElasticSearch</li>
+
+<li> Creating an ElasticSearch Index with Postman</li>
 </ol>
