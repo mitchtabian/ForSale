@@ -66,20 +66,3 @@ I used the unicode converter here: https://www.base64decode.org/.
 
 </ol>
 
-
-
-<<<<<<< HEAD
-=======
-<li><a href='https://goo.gl/jLzPsS'> Rotating Images on Android</a></li>
-
-<li><a href='https://goo.gl/M4EJ2m'> Saving Search Preferences</a></li>
-
-<li> Deploying ElasticSearch</li>
-
-<li> Creating an ElasticSearch Index with Postman</li>
-
-<li> Enabling Firebase Cloud Functions</li>
-
-<li> ElasticSearch Firebase Cloud Function</li>
-</ol>
->>>>>>> origin/master
