@@ -41,4 +41,7 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 <li> Deploying ElasticSearch</li>
 
 <li> Creating an ElasticSearch Index with Postman</li>
+
+<li> Enabling Firebase Cloud Functions</li>
+
 </ol>
