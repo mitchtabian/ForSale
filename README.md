@@ -1,38 +1,70 @@
-<img class='header-img' src='https://s3.amazonaws.com/codingwithmitch-static-and-media/media/ForSale/Android+Classifieds+App.png' />
-
-<h1>Android Classifieds App Course</h1>
-<h4>A step-by-step guide to build a fully functional app where users can post items or services for sale.</h4>
-<h4>Watch it here: <a href='https://codingwithmitch.com/courses/classifieds-app/' target='_blank'>Classifieds App Course</a></h4>
-<hr>
-<p>
-Learn to to build a fully functional app where users can post items or services for sale. Other users can then search for those 
-items and services in their locality. </br>
-Since Firebase doesn't have any search methods where users can perform something similar to an "SQL LIKE" query, we'll be using
-ElasticSearch to index the data from Firebase for superior search functionality.
-</p> 
-<h2>Lecture Source Code:</h2>
+<h2>Creating an ElasticSearch index with Postman</h2>
 <ol>
-<li>Introduction</li>
+<li>Download and install postman if you don't have it: <a href='https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?utm_source=chrome-ntp-icon'>get it here </a></li>
 
-<li><a href='https://goo.gl/E7koEm'> Getting Started</a></li>
+<li>Add the url end point for you're ElasticSearch server. This is mine: http://35.188.218.81//elasticsearch/posts but yours will be different.
 
-<li><a href='https://goo.gl/E8dhMM'> Collapsing Toolbar Setup</a></li>
+<p><b>DO NOT COPY MINE! IT WON'T WORK</b></p></li>
 
-<li><a href='https://goo.gl/F3JrQu'> Tabs Setup</a></li>
+<li>
+Add the body to the <b>PUT</b> request:
+<pre><code>{
+	"mappings":{
+	"post":{
+		"properties":{
+				"city":{
+					"type": "text"
+				},
+				"contact_email":{
+					"type": "text"
+				},
+				"country":{
+					"type": "text"
+				},
+				"description":{
+				"type": "text"
+				},
+				"image":{
+				"type": "text"
+				},
+				"post_id":{
+					"type": "text"
+				},
+				"state_province":{
+					"type": "text"
+				},
+				"title":{
+					"type": "text"
+				},
+				"user_id":{
+					"type": "text"
+				}
+			}
+		}
+	}
+}</code></pre>
+</li>
 
-<li><a href='https://goo.gl/GpQWNK'> Signing out a FirebaseUser</a></li>
+<li>Add the headers to the PUT request:
+<pre><code>
+key: Content-Type, value: application/json
+key: Authorization, value: Basic dXNlcjpUQlhxVkRYNkRaaVQ=
+</code></pre>
+<b>Remember</b> to get your authorization token you just take convert "user:" and your password to base64. So for me my password was "TBXqVDX6DZiT" and username was "user" so user:TBXqVDX6DZiT = dXNlcjpUQlhxVkRYNkRaaVQ=. 
+I used the unicode converter here: https://www.base64decode.org/.
+</li>
 
-<li><a href='https://goo.gl/Ne6UFu'> Selecting an Image for Uploading</a></li>
+<li>Press "Send" on Postman. If the request is successful you'll get a result that looks like this: 
+<pre><code>
+{
+    "acknowledged": true,
+    "shards_acknowledged": true,
+    "index": "test"
+}
+</code></pre>
+</li>
 
-<li><a href='https://goo.gl/GwumRM'> Camera and Storage Permissions</a></li>
-
-<li><a href='https://goo.gl/D7sQ25'> Sending Data from Dialog to Fragment</a></li>
-
-<li><a href='https://goo.gl/3zHm9b'> Compressing Images in Android</a></li>
-
-<li><a href='https://goo.gl/HfZH7K'> Uploading an Image to Firebase Storage</a></li>
-
-<li><a href='https://goo.gl/ZFWvwK'> Posting Items for Sale</a></li>
-
-<li><a href='https://goo.gl/jLzPsS'> Rotating Images on Android</a></li>
 </ol>
+
+
+
