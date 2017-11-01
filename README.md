@@ -59,4 +59,6 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 <li> Inflating a FrameLayout</li>
 
 <li> Viewing Posts for Sale</li>
+
+<li> Saving Posts to Watch-List</li>
 </ol>
