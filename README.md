@@ -45,4 +45,6 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 <li> Enabling Firebase Cloud Functions</li>
 
 <li> ElasticSearch Firebase Cloud Function</li>
+
+<li> Querying an ElasticSearch Server</li>
 </ol>
