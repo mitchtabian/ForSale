@@ -51,4 +51,6 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 <li> Retrofit Setup in Android</li>
 
 <li> ElasticSearch Query Prep</li>
+
+<li> ElasticSearch Android Retrofit Query</li>
 </ol>
