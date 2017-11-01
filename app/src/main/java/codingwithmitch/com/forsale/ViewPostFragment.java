@@ -8,7 +8,9 @@ import android.graphics.BitmapFactory;
 import android.graphics.BlurMaskFilter;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -27,6 +29,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+
+import java.io.File;
 
 import codingwithmitch.com.forsale.models.Post;
 import codingwithmitch.com.forsale.util.UniversalImageLoader;
@@ -100,6 +104,7 @@ public class ViewPostFragment extends Fragment {
                         addItemToWatchList();
                     }
                 });
+
             }
             //WatchList Fragment (AKA #1)
             else if(fragment.getTag().equals("android:switcher:" + R.id.viewpager_container + ":1")){

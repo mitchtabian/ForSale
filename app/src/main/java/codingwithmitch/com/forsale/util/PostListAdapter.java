@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import codingwithmitch.com.forsale.R;
 import codingwithmitch.com.forsale.SearchActivity;
 import codingwithmitch.com.forsale.SearchFragment;
+import codingwithmitch.com.forsale.WatchListFragment;
 import codingwithmitch.com.forsale.models.Post;
 
 /**
@@ -84,6 +85,12 @@ public class PostListAdapter extends RecyclerView.Adapter<PostListAdapter.ViewHo
                     //WatchList Fragment (AKA #1)
                     else if(fragment.getTag().equals("android:switcher:" + R.id.viewpager_container + ":1")){
                         Log.d(TAG, "onClick: switching to: " + mContext.getString(R.string.fragment_watch_list));
+
+                        WatchListFragment watchListFragment = (WatchListFragment)((SearchActivity)mContext).getSupportFragmentManager()
+                                .findFragmentByTag("android:switcher:" + R.id.viewpager_container + ":" +
+                                        ((SearchActivity)mContext).mViewPager.getCurrentItem());
+
+                        watchListFragment.viewPost(mPosts.get(pos).getPost_id());
                     }
                 }
             }
