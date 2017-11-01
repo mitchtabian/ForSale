@@ -844,6 +844,8 @@
     <string name="default_web_client_id" translatable="false">6689049269-bcuo7e2l2luocof5d30euqr7s8rfdt9s.apps.googleusercontent.com</string>
     <string name="dialog_select_photo">SelectPhoto</string>
     <string name="field_password">password</string>
+    <string name="field_post_id">post_id</string>
+    <string name="field_user_id">user_id</string>
     <string name="firebase_database_url" translatable="false">https://forsale-47278.firebaseio.com</string>
     <string name="fragment_account">Account</string>
     <string name="fragment_post">Post</string>
@@ -871,6 +873,7 @@
     <string name="node_elasticsearch">elasticsearch</string>
     <string name="node_posts">posts</string>
     <string name="node_users">users</string>
+    <string name="node_watch_list">watch_list</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>

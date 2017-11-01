@@ -14,10 +14,13 @@
     <string name="node_users">users</string>
     <string name="node_posts">posts</string>
     <string name="node_elasticsearch">elasticsearch</string>
+    <string name="node_watch_list">watch_list</string>
 
 
     <!-- Database field names -->
     <string name="field_password">password</string>
+    <string name="field_user_id">user_id</string>
+    <string name="field_post_id">post_id</string>
 
 
     <!-- Intent extras and Bundle arguments -->
