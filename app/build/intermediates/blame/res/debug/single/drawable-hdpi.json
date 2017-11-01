@@ -10,5 +10,13 @@
     {
         "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_android.png",
         "source": "F:\\AndroidStudio Projects\\ForSale\\app\\src\\main\\res\\drawable-hdpi\\ic_android.png"
+    },
+    {
+        "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_save_white.png",
+        "source": "F:\\AndroidStudio Projects\\ForSale\\app\\src\\main\\res\\drawable-hdpi\\ic_save_white.png"
+    },
+    {
+        "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_x_white.png",
+        "source": "F:\\AndroidStudio Projects\\ForSale\\app\\src\\main\\res\\drawable-hdpi\\ic_x_white.png"
     }
 ]
