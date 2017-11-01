@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Oct 31 11:01:05 PDT 2017
+#Tue Oct 31 19:35:24 PDT 2017
 210.set=ANDROID_RESOURCE
 282.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\common_google_signin_btn_tint.xml
 14.set=ANDROID_RESOURCE
@@ -140,7 +140,7 @@
 93.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_filters.xml
 147.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 59.set=ANDROID_RESOURCE
-322.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_login.xml
+322.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\jars\\2\\1f\\main.jar\\publicsuffixes.gz
 245.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color-v23\\abc_tint_default.xml
 168.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\switch_thumb_material_dark.xml
 276.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -224,7 +224,7 @@
 94.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\grey_border_bottom.xml
 148.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 69.set=ANDROID_RESOURCE
-323.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_media.xml
+323.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_login.xml
 246.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_media_custom.xml
 169.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png
 277.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -239,6 +239,7 @@
 226.set=ANDROID_RESOURCE
 2.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-v21\\avd_hide_password.xml
 150.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
+331.set=ANDROID_RESOURCE
 272.set=ANDROID_RESOURCE
 76.set=ANDROID_RESOURCE
 48.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -309,7 +310,7 @@
 95.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-xxhdpi-v4\\ic_launcher.png
 149.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 79.set=ANDROID_RESOURCE
-324.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png
+324.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_media.xml
 247.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png
 278.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 201.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -393,7 +394,7 @@
 119.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_action.xml
 96.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\abc_slide_out_top.xml
 89.set=ANDROID_RESOURCE
-325.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png
+325.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png
 248.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
 279.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 202.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -402,6 +403,7 @@
 300.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_text_dark.xml
 223.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png
 146.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\jars\\2\\1f\\main.jar\\third_party\\java_src\\error_prone\\project\\annotations\\Google_internal.gwt.xml
+331.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 254.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 177.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 100.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -482,7 +484,7 @@
 104.set=ANDROID_RESOURCE
 97.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\design_fab_background.xml
 20.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\notification_bg_low.xml
-326.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\abc_search_view.xml
+326.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png
 249.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color-v23\\abc_tint_switch_track.xml
 203.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 72.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\design_snackbar_in.xml
@@ -503,7 +505,7 @@
 180.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 111.set=ANDROID_RESOURCE
 217.set=ANDROID_RESOURCE
-322.set=ANDROID_RESOURCE
+322.set=JAVA_RESOURCE
 263.set=ANDROID_RESOURCE
 26.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 67.set=ANDROID_RESOURCE
@@ -572,7 +574,7 @@
 114.set=ANDROID_RESOURCE
 98.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\notification_bg.xml
 21.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_register.xml
-327.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\fragment_post.xml
+327.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\abc_search_view.xml
 204.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 73.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_hint_foreground_material_dark.xml
 127.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -591,7 +593,7 @@
 181.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 121.set=ANDROID_RESOURCE
 227.set=ANDROID_RESOURCE
-count=331
+count=332
 273.set=ANDROID_RESOURCE
 27.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\jars\\2\\1f\\main.jar
 77.set=ANDROID_RESOURCE
@@ -632,7 +634,7 @@ count=331
 52.set=ANDROID_RESOURCE
 116.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 93.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
-322.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
+322.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\jars\\2\\1f\\main.jar
 245.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 168.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 156.set=ANDROID_RESOURCE
@@ -659,7 +661,7 @@ count=331
 22.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_search_view.xml
 124.set=ANDROID_RESOURCE
 99.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml
-328.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\abc_select_dialog_material.xml
+328.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\fragment_post.xml
 205.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 74.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\jars\\2\\1f\\main.jar\\build-data.properties
 128.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -742,7 +744,7 @@ count=331
 48.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\notification_template_media_custom.xml
 23.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\jars\\2\\1f\\main.jar\\META-INF\\LICENSE
 134.set=ANDROID_RESOURCE
-329.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\abc_popup_menu_item_layout.xml
+329.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\abc_select_dialog_material.xml
 206.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
 75.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_activity_chooser_view.xml
 129.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -820,7 +822,7 @@ count=331
 124.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_btn_colored_material.xml
 33.set=ANDROID_RESOURCE
 3.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
-330.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png
+330.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\abc_popup_menu_item_layout.xml
 253.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_big_media_narrow_custom.xml
 176.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\design_bottom_navigation_item_background.xml
 151.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v17\\notification_template_big_media.xml
@@ -903,6 +905,7 @@ count=331
 125.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png
 43.set=ANDROID_RESOURCE
 4.base=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_
+331.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png
 254.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\design_bottom_sheet_slide_in.xml
 177.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png
 100.file=F\:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_switch_thumb_material.xml
