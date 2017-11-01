@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relLayout1"
+                android:background="@color/lightGrey">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/post_image"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_android"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/post_image"
+                    android:id="@+id/relLayout2"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/White">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/input_title"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:maxLines="2"
+                        android:hint="Title"
+                        android:textColor="@color/Black"
+                        android:padding="10dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relLayout2"
+                    android:id="@+id/relLayout9">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/White"
+                        android:id="@+id/relLayout3"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:id="@+id/input_description"
+                            android:layout_centerVertical="true"
+                            android:maxLines="20"
+                            android:background="@null"
+                            android:hint="Description"
+                            android:textColor="@color/Black"
+                            android:gravity="start"/>
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLayout3"
+                        android:background="@color/White"
+                        android:id="@+id/relLayout4"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_price"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:inputType="numberDecimal"
+                            android:hint="Price"
+                            android:textColor="@color/Black"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/relLayout4"
+                        android:background="@color/White"
+                        android:id="@+id/relLayout5"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_country"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:inputType="textCapWords"
+                            android:hint="Country"
+                            android:textColor="@color/Black"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/relLayout5"
+                        android:background="@color/White"
+                        android:id="@+id/relLayout6"
+                        android:padding="10dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_state_province"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:inputType="textCapWords"
+                            android:hint="State/Province/Region"
+                            android:textColor="@color/Black"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/relLayout6"
+                        android:background="@color/White"
+                        android:id="@+id/relLayout7"
+                        android:padding="10dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_city"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:inputType="textCapWords"
+                            android:hint="City"
+                            android:textColor="@color/Black"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/relLayout7"
+                        android:background="@color/White"
+                        android:id="@+id/relLayout8"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/input_email"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:inputType="textEmailAddress"
+                            android:hint="Your contact email"
+                            android:textColor="@color/Black"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLayout8"
+                        android:background="@color/White"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/btn_post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginBottom="35dp"
+                            android:text="post"
+                            android:background="@drawable/white_onclick_grey"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

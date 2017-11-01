@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_search.png",
+        "source": "F:\\AndroidStudio Projects\\ForSale\\app\\src\\main\\res\\drawable-xhdpi\\ic_search.png"
+    },
+    {
+        "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_back_arrow.png",
+        "source": "F:\\AndroidStudio Projects\\ForSale\\app\\src\\main\\res\\drawable-xhdpi\\ic_back_arrow.png"
+    },
+    {
+        "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_android.png",
+        "source": "F:\\AndroidStudio Projects\\ForSale\\app\\src\\main\\res\\drawable-xhdpi\\ic_android.png"
+    }
+]
