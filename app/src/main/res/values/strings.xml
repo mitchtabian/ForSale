@@ -12,9 +12,11 @@
     <!-- Database nodes -->
     <string name="node_users">users</string>
     <string name="node_posts">posts</string>
+    <string name="node_elasticsearch">elasticsearch</string>
 
 
     <!-- Database field names -->
+    <string name="field_password">password</string>
 
 
 
