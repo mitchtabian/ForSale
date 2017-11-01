@@ -49,4 +49,6 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 <li> Querying an ElasticSearch Server</li>
 
 <li> Retrofit Setup in Android</li>
+
+<li> ElasticSearch Query Prep</li>
 </ol>
