@@ -47,4 +47,6 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 <li> ElasticSearch Firebase Cloud Function</li>
 
 <li> Querying an ElasticSearch Server</li>
+
+<li> Retrofit Setup in Android</li>
 </ol>
