@@ -1,6 +1,7 @@
 package codingwithmitch.com.forsale.util;
 
 import android.content.Context;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
 import android.util.Log;
@@ -12,6 +13,8 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 
 import codingwithmitch.com.forsale.R;
+import codingwithmitch.com.forsale.SearchActivity;
+import codingwithmitch.com.forsale.SearchFragment;
 import codingwithmitch.com.forsale.models.Post;
 
 /**
@@ -56,11 +59,33 @@ public class PostListAdapter extends RecyclerView.Adapter<PostListAdapter.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         UniversalImageLoader.setImage(mPosts.get(position).getImage(), holder.mPostImage);
 
+        final int pos = position;
         holder.mPostImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: selected a post");
                 //TODO
+
+                //view the post in more detail
+                Fragment fragment = (Fragment)((SearchActivity)mContext).getSupportFragmentManager()
+                        .findFragmentByTag("android:switcher:" + R.id.viewpager_container + ":" +
+                                ((SearchActivity)mContext).mViewPager.getCurrentItem());
+                if(fragment != null){
+                    //SearchFragment (AKA #0)
+                    if(fragment.getTag().equals("android:switcher:" + R.id.viewpager_container + ":0")){
+                        Log.d(TAG, "onClick: switching to: " + mContext.getString(R.string.fragment_view_post));
+
+                        SearchFragment searchFragment = (SearchFragment)((SearchActivity)mContext).getSupportFragmentManager()
+                                .findFragmentByTag("android:switcher:" + R.id.viewpager_container + ":" +
+                                        ((SearchActivity)mContext).mViewPager.getCurrentItem());
+
+                        searchFragment.viewPost(mPosts.get(pos).getPost_id());
+                    }
+                    //WatchList Fragment (AKA #1)
+                    else if(fragment.getTag().equals("android:switcher:" + R.id.viewpager_container + ":1")){
+                        Log.d(TAG, "onClick: switching to: " + mContext.getString(R.string.fragment_watch_list));
+                    }
+                }
             }
         });
     }

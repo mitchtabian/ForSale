@@ -1,6 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/lightGrey">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <codingwithmitch.com.forsale.util.SquareImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_image"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/add_watch_list"
+
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="save post"
+                    android:textColor="@color/White"
+                    android:layout_below="@+id/add_watch_list"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/save_post"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/post_close"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_image"
+                android:background="@color/lightGrey">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:id="@+id/post_title"
+                    android:textColor="@color/Black"
+                    android:text="some title"
+                    android:padding="10dp"
+                    android:background="@color/White"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/post_title"
+                    android:id="@+id/relLayout1"
+                    android:background="@color/White"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/post_description"
+                        android:textColor="@color/Black"
+                        android:text="some description about the post"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/post_price"
+                        android:textColor="@color/Black"
+                        android:text="$20.99"
+                        android:layout_below="@+id/post_description"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:id="@+id/post_location"
+                        android:textColor="@color/Black"
+                        android:text="Vancouver, British Columbia, Canada"
+                        android:layout_below="@+id/post_price"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relLayout1"
+                    android:background="@color/White"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:id="@+id/post_contact"
+                        android:textColor="@color/White"
+                        android:text="contact seller"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:textAlignment="center"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:background="@drawable/teal_onclick_red"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
 
 </RelativeLayout>

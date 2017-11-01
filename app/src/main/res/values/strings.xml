@@ -4,6 +4,7 @@
     <string name="fragment_search">Search</string>
     <string name="fragment_watch_list">Watch List</string>
     <string name="fragment_post">Post</string>
+    <string name="fragment_view_post">Post</string>
     <string name="fragment_account">Account</string>
 
     <!-- Dialog Names -->
@@ -19,6 +20,8 @@
     <string name="field_password">password</string>
 
 
+    <!-- Intent extras and Bundle arguments -->
+    <string name="arg_post_id">arg_post_id</string>
 
     <!-- Shared Preferenes -->
     <string name="preferences_country">preferences_country</string>

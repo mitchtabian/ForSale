@@ -821,6 +821,7 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">ForSale</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="arg_post_id">arg_post_id</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
@@ -847,6 +848,7 @@
     <string name="fragment_account">Account</string>
     <string name="fragment_post">Post</string>
     <string name="fragment_search">Search</string>
+    <string name="fragment_view_post">Post</string>
     <string name="fragment_watch_list">Watch List</string>
     <string name="gcm_defaultSenderId" translatable="false">6689049269</string>
     <string name="google_api_key" translatable="false">AIzaSyCBCA3qodeFVYHzvUOWg7kqwXoeyyciGY8</string>

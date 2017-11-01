@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,6 +58,8 @@ public class SearchFragment extends Fragment {
     //widgets
     private ImageView mFilters;
     private EditText mSearchText;
+    private FrameLayout mFrameLayout;
+
 
     //vars
     private String mElasticSearchPassword;
@@ -73,6 +77,8 @@ public class SearchFragment extends Fragment {
         mFilters = (ImageView) view.findViewById(R.id.ic_search);
         mSearchText = (EditText) view.findViewById(R.id.input_search);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        mFrameLayout = (FrameLayout) view.findViewById(R.id.container);
+
 
         getElasticSearchPassword();
         init();
@@ -184,6 +190,21 @@ public class SearchFragment extends Fragment {
                 return false;
             }
         });
+    }
+
+    public void viewPost(String postId){
+        ViewPostFragment fragment = new ViewPostFragment();
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+        Bundle args = new Bundle();
+        args.putString(getString(R.string.arg_post_id), postId);
+        fragment.setArguments(args);
+
+        transaction.replace(R.id.container, fragment, getString(R.string.fragment_view_post));
+        transaction.addToBackStack(getString(R.string.fragment_view_post));
+        transaction.commit();
+
+        mFrameLayout.setVisibility(View.VISIBLE);
     }
 
     @Override
