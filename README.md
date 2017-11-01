@@ -1,45 +1,48 @@
-<h2>Creating an ElasticSearch Firebase Cloud Function</h2>
-<h5>This function will trigger when a post is created or deleted and update the data on your ElasticSearch server.</h5>
+<img class='header-img' src='https://s3.amazonaws.com/codingwithmitch-static-and-media/media/ForSale/Android+Classifieds+App.png' />
+
+<h1>Android Classifieds App Course</h1>
+<h4>A step-by-step guide to build a fully functional app where users can post items or services for sale.</h4>
+<h4>Watch it here: <a href='https://codingwithmitch.com/courses/classifieds-app/' target='_blank'>Classifieds App Course</a></h4>
+<hr>
+<p>
+Learn to to build a fully functional app where users can post items or services for sale. Other users can then search for those 
+items and services in their locality. </br>
+Since Firebase doesn't have any search methods where users can perform something similar to an "SQL LIKE" query, we'll be using
+ElasticSearch to index the data from Firebase for superior search functionality.
+</p> 
+<h2>Lecture Source Code:</h2>
 <ol>
+<li>Introduction</li>
 
-<li>Open the file named "index.js" in the "functions" folder in your Android project's directory. Paste this into index.js:</li>
+<li><a href='https://goo.gl/E7koEm'> Getting Started</a></li>
 
-<pre><code>
-const functions = require('firebase-functions');
+<li><a href='https://goo.gl/E8dhMM'> Collapsing Toolbar Setup</a></li>
 
-const request = require('request-promise')
+<li><a href='https://goo.gl/F3JrQu'> Tabs Setup</a></li>
 
-exports.indexPostsToElastic = functions.database.ref('/posts/{post_id}')
-	.onWrite(event => {
-		let postData = event.data.val();
-		let post_id = event.params.post_id;
-		
-		console.log('Indexing post:', postData);
-		
-		let elasticSearchConfig = functions.config().elasticsearch;
-		let elasticSearchUrl = elasticSearchConfig.url + 'posts/post/' + post_id;
-		let elasticSearchMethod = postData ? 'POST' : 'DELETE';
-		
-		let elasticSearchRequest = {
-			method: elasticSearchMethod,
-			url: elasticSearchUrl,
-			auth:{
-				username: elasticSearchConfig.username,
-				password: elasticSearchConfig.password,
-			},
-			body: postData,
-			json: true
-		  };
-		  
-		  return request(elasticSearchRequest).then(response => {
-			 console.log("ElasticSearch response", response);
-		  });
-	});
+<li><a href='https://goo.gl/GpQWNK'> Signing out a FirebaseUser</a></li>
 
-</code></pre>
+<li><a href='https://goo.gl/Ne6UFu'> Selecting an Image for Uploading</a></li>
 
-<li>save the file and deploy it to firebase:
-<pre><code>firebase deploy --only functions</code></pre>
-</li>
+<li><a href='https://goo.gl/GwumRM'> Camera and Storage Permissions</a></li>
+
+<li><a href='https://goo.gl/D7sQ25'> Sending Data from Dialog to Fragment</a></li>
+
+<li><a href='https://goo.gl/3zHm9b'> Compressing Images in Android</a></li>
+
+<li><a href='https://goo.gl/HfZH7K'> Uploading an Image to Firebase Storage</a></li>
+
+<li><a href='https://goo.gl/ZFWvwK'> Posting Items for Sale</a></li>
+
+<li><a href='https://goo.gl/jLzPsS'> Rotating Images on Android</a></li>
+
+<li><a href='https://goo.gl/M4EJ2m'> Saving Search Preferences</a></li>
+
+<li> Deploying ElasticSearch</li>
+
+<li> Creating an ElasticSearch Index with Postman</li>
+
+<li> Enabling Firebase Cloud Functions</li>
+
+<li> ElasticSearch Firebase Cloud Function</li>
 </ol>
-
