@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -31,6 +33,8 @@ import codingwithmitch.com.forsale.models.HitsList;
 import codingwithmitch.com.forsale.models.HitsObject;
 import codingwithmitch.com.forsale.models.Post;
 import codingwithmitch.com.forsale.util.ElasticSearchAPI;
+import codingwithmitch.com.forsale.util.PostListAdapter;
+import codingwithmitch.com.forsale.util.RecyclerViewMargin;
 import okhttp3.Credentials;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -46,6 +50,8 @@ public class SearchFragment extends Fragment {
 
     private static final String TAG = "SearchFragment";
     private static final String BASE_URL = "http://23.236.56.178//elasticsearch/posts/post/";
+    private static final int NUM_GRID_COLUMNS = 3;
+    private static final int GRID_ITEM_MARGIN = 5;
 
     //widgets
     private ImageView mFilters;
@@ -57,6 +63,8 @@ public class SearchFragment extends Fragment {
     private String mPrefStateProv;
     private String mPrefCountry;
     private ArrayList<Post> mPosts;
+    private RecyclerView mRecyclerView;
+    private PostListAdapter mAdapter;
 
     @Nullable
     @Override
@@ -64,11 +72,21 @@ public class SearchFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         mFilters = (ImageView) view.findViewById(R.id.ic_search);
         mSearchText = (EditText) view.findViewById(R.id.input_search);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
 
         getElasticSearchPassword();
         init();
 
         return view;
+    }
+
+    private void setupPostsList(){
+        RecyclerViewMargin itemDecorator = new RecyclerViewMargin(GRID_ITEM_MARGIN, NUM_GRID_COLUMNS);
+        mRecyclerView.addItemDecoration(itemDecorator);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), NUM_GRID_COLUMNS);
+        mRecyclerView.setLayoutManager(gridLayoutManager);
+        mAdapter = new PostListAdapter(getActivity(), mPosts);
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     private void init(){
@@ -142,6 +160,7 @@ public class SearchFragment extends Fragment {
 
                                 Log.d(TAG, "onResponse: size: " + mPosts.size());
                                 //setup the list of posts
+                                setupPostsList();
 
                             }catch (NullPointerException e){
                                 Log.e(TAG, "onResponse: NullPointerException: " + e.getMessage() );

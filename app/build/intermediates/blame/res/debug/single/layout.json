@@ -1,11 +1,11 @@
 [
     {
-        "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
-        "source": "C:\\Users\\User\\.android\\build-cache\\0c29ffceff5aad96cce0258666bfe1731ab8c858\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
-    },
-    {
         "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
         "source": "C:\\Users\\User\\.android\\build-cache\\25774434cdda6e32a62109c33d6c76684ec83f11\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\0c29ffceff5aad96cce0258666bfe1731ab8c858\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_view_post.xml",
@@ -54,6 +54,10 @@
     {
         "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
         "source": "C:\\Users\\User\\.android\\build-cache\\0c29ffceff5aad96cce0258666bfe1731ab8c858\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_view_post.xml",
+        "source": "F:\\AndroidStudio Projects\\ForSale\\app\\src\\main\\res\\layout\\layout_view_post.xml"
     },
     {
         "merged": "F:\\AndroidStudio Projects\\ForSale\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
