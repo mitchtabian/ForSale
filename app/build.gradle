@@ -40,6 +40,11 @@ dependencies {
     //Universal image loader
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+
+    //retrofit gson lib
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
 
     /*
         ---------- Firebase -----------
