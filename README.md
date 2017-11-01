@@ -57,4 +57,6 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 <li> RecyclerView Grid</li>
 
 <li> Inflating a FrameLayout</li>
+
+<li> Viewing Posts for Sale</li>
 </ol>
