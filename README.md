@@ -40,27 +40,27 @@ ElasticSearch to index the data from Firebase for superior search functionality.
 
 <li> Deploying ElasticSearch</li>
 
-<li> Creating an ElasticSearch Index with Postman</li>
+<li><a href='https://goo.gl/EufPna'>  Creating an ElasticSearch Index with Postman</a></li>
 
-<li> Enabling Firebase Cloud Functions</li>
+<li><a href='https://goo.gl/QoYxS7'> Enabling Firebase Cloud Functions</a></li>
 
-<li> ElasticSearch Firebase Cloud Function</li>
+<li><a href='https://goo.gl/qWLkWo'> ElasticSearch Firebase Cloud Function</a></li>
 
-<li> Querying an ElasticSearch Server</li>
+<li><a href='https://goo.gl/uFHRVd'> Querying an ElasticSearch Server</a></li>
 
-<li> Retrofit Setup in Android</li>
+<li><a href='https://goo.gl/JhwrGo'> Retrofit Setup in Android</a></li>
 
-<li> ElasticSearch Query Prep</li>
+<li><a href='https://goo.gl/MyAoeJ'> ElasticSearch Query Prep</a></li>
 
-<li> ElasticSearch Android Retrofit Query</li>
+<li><a href='https://goo.gl/H5hGnN'> ElasticSearch Android Retrofit Query</a></li>
 
-<li> RecyclerView Grid</li>
+<li><a href='https://goo.gl/j7baHb'> RecyclerView Grid</a></li>
 
-<li> Inflating a FrameLayout</li>
+<li><a href='https://goo.gl/vysTs1'> Inflating a FrameLayout</a></li>
 
-<li> Viewing Posts for Sale</li>
+<li><a href='https://goo.gl/MCVynK'> Viewing Posts for Sale</a></li>
 
-<li> Saving Posts to Watch-List</li>
+<li><a href='https://goo.gl/wLsLkn'> Saving Posts to Watch-List</a></li>
 
-<li> Removing Posts from Watch-List</li>
+<li><a href='https://goo.gl/MWnuPu'>  Removing Posts from Watch-List</a></li>
 </ol>
