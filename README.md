@@ -1,8 +1,11 @@
-<img class='header-img' src='https://s3.amazonaws.com/codingwithmitch-static-and-media/media/ForSale/Android+Classifieds+App.png' />
+<a href='https://www.youtube.com/watch?v=Z7ufbRuG9gY&list=PLgCYzUzKIBE-G0tuxjKGkl_keIW2FFwKX' target='_blank'>
+  <img class='header-img' src='https://s3.amazonaws.com/codingwithmitch-static-and-media/media/ForSale/Android+Classifieds+App.png' />
+</a>
+
 
 <h1>Android Classifieds App Course</h1>
 <h4>A step-by-step guide to build a fully functional app where users can post items or services for sale.</h4>
-<h4>Watch it here: <a href='https://codingwithmitch.com/courses/classifieds-app/' target='_blank'>Classifieds App Course</a></h4>
+<h4>Watch it here: <a href='https://www.youtube.com/watch?v=Z7ufbRuG9gY&list=PLgCYzUzKIBE-G0tuxjKGkl_keIW2FFwKX' target='_blank'>Classifieds App Course</a></h4>
 <hr>
 <p>
 Learn to to build a fully functional app where users can post items or services for sale. Other users can then search for those 
