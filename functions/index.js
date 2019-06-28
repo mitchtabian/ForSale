@@ -1,6 +1,6 @@
 const functions = require('firebase-functions');
 
-const request = require('request-promise')
+const request = require('request-promise');
 
 exports.indexPostsToElastic = functions.database.ref('/posts/{post_id}')
 	.onWrite(event => {
